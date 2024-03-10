@@ -28,7 +28,7 @@ router.post("/", validateReview, wrapAsync(async (req, res) => {
     res.redirect(`/listing/${lis._id}`);
 }));
 
-//delete reviews 
+// delete reviews 
 router.delete("/:reviewId", wrapAsync(async(req, res) => {
     let {id,reviewId} = req.params;
 
